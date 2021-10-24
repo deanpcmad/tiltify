@@ -24,7 +24,7 @@ You can get your Access Token by going here (replacing YOURUSERNAME with your us
 https://dashboard.tiltify.com/YOURUSERNAME/my-account/connected-accounts/applications
 ```
 
-If you're not planning on using OAuth, you can set the "Redirect URLs" as "https://example.com". Once created, copy your "Access Token" and save this.
+If you're not planning on using OAuth, you can set the `Redirect URLs` as `https://example.com`. Once created, copy your `Access Token` and save this:
 
 ```ruby
 @client = Tiltify::Client.new(access_token: "")
