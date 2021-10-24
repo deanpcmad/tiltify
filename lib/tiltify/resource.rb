@@ -46,6 +46,8 @@ module Tiltify
         raise Error, "Error 500: We were unable to perform the request due to server-side problems. '#{response.body["error"]}'"
       when 503
         raise Error, "Error 503: You have been rate limited for sending more than 20 requests per second. '#{response.body["error"]}'"
+      when 501
+        raise Error, "Error 501: This resource has not been implemented. '#{response.body["error"]}'"
       end
 
       response

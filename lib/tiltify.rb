@@ -14,6 +14,7 @@ module Tiltify
   autoload :Object, "tiltify/object"
 
   autoload :CampaignsResource, "tiltify/resources/campaigns"
+  autoload :CausesResource, "tiltify/resources/causes"
 
   autoload :Campaign, "tiltify/objects/campaign"
   autoload :Donation, "tiltify/objects/donation"
@@ -21,5 +22,6 @@ module Tiltify
   autoload :Poll, "tiltify/objects/poll"
   autoload :Challenge, "tiltify/objects/challenge"
   autoload :Schedule, "tiltify/objects/schedule"
+  autoload :Cause, "tiltify/objects/cause"
 
 end
