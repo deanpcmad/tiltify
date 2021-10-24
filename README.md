@@ -92,3 +92,12 @@ Responses are created as objects like `Tiltify::Campaign`. Having types like `Ti
 # Retrieves a list of a teams campaigns
 @client.teams.campaigns(team_id: "id")
 ```
+
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/deanpcmad/tiltify.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
