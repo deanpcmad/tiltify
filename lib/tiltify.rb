@@ -15,6 +15,7 @@ module Tiltify
 
   autoload :CampaignsResource, "tiltify/resources/campaigns"
   autoload :CausesResource, "tiltify/resources/causes"
+  autoload :UsersResource, "tiltify/resources/users"
 
   autoload :Campaign, "tiltify/objects/campaign"
   autoload :Donation, "tiltify/objects/donation"
@@ -23,5 +24,7 @@ module Tiltify
   autoload :Challenge, "tiltify/objects/challenge"
   autoload :Schedule, "tiltify/objects/schedule"
   autoload :Cause, "tiltify/objects/cause"
+  autoload :User, "tiltify/objects/user"
+  autoload :Team, "tiltify/objects/team"
 
 end
