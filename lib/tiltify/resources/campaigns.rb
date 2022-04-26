@@ -6,7 +6,7 @@ module Tiltify
     end
 
     def donations(campaign_id:, **params)
-      response = get_request("campaigns/#{campaign_id}/donations", params)
+      response = get_request("campaigns/#{campaign_id}/donations", params: params)
       Collection.from_response(response, type: Donation)
     end
 
