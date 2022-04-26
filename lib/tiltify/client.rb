@@ -32,9 +32,7 @@ module Tiltify
       @connection ||= Faraday.new(BASE_URL) do |conn|
         conn.request :authorization, :Bearer, access_token
         conn.request :json
-
-        conn.response :dates
-        conn.response :json, content_type: "application/json"
+        conn.response :json
 
         conn.adapter adapter, @stubs
       end
