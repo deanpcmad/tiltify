@@ -1,21 +1,19 @@
 module Tiltify
   class Collection
-    attr_reader :data, :total, :cursor
+    attr_reader :data, :total
 
     def self.from_response(response, type:)
       body = response.body
 
       new(
         data: body["data"].map { |attrs| type.new(attrs) },
-        total: body["data"].count,
-        cursor: body.dig("pagination", "cursor")
+        total: body["data"].count
       )
     end
 
-    def initialize(data:, total:, cursor:)
+    def initialize(data:, total:)
       @data = data
       @total = total
-      @cursor = cursor.nil? ? nil : cursor
     end
   end
 end
