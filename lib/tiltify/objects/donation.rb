@@ -5,7 +5,6 @@ module Tiltify
       super options
 
       self.completed_at = Time.at(options["completedAt"].to_s[0..-4].to_i)
-      self.updated_at   = Time.at(options["updatedAt"].to_s[0..-4].to_i)
     end
 
   end
