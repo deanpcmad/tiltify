@@ -8,8 +8,8 @@ module Tiltify
       new(
         data: body["data"].map { |attrs| type.new(attrs) },
         total: body["data"].count,
-        has_prev: !body["links"]["prev"].blank?,
-        has_next: !body["links"]["next"].blank?
+        has_prev: body["links"] && !body["links"]["prev"].blank?,
+        has_next: body["links"] && !body["links"]["next"].blank?
       )
     end
 
