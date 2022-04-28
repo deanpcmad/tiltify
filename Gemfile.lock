@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tiltify (0.1.4)
+    tiltify (0.1.5)
       faraday (~> 2.0)
 
 GEM
