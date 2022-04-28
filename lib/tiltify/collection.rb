@@ -13,7 +13,7 @@ module Tiltify
       )
     end
 
-    def initialize(data:, total:, has_prev:, has_next:)
+    def initialize(data:, total:, has_prev: nil, has_next: nil)
       @data = data
       @total = total
       @has_prev = has_prev
