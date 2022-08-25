@@ -14,11 +14,13 @@ module Tiltify
 
   autoload :CampaignsResource, "tiltify/resources/campaigns"
   autoload :CausesResource, "tiltify/resources/causes"
+  autoload :FundraisingEventsResource, "tiltify/resources/fundraising_events"
   autoload :UsersResource, "tiltify/resources/users"
   autoload :TeamsResource, "tiltify/resources/teams"
 
   autoload :Campaign, "tiltify/objects/campaign"
   autoload :Donation, "tiltify/objects/donation"
+  autoload :FundraisingEvent, "tiltify/objects/fundraising_event"
   autoload :Reward, "tiltify/objects/reward"
   autoload :Poll, "tiltify/objects/poll"
   autoload :Challenge, "tiltify/objects/challenge"
