@@ -20,6 +20,10 @@ module Tiltify
       CausesResource.new(self)
     end
 
+    def fundraising_events
+      FundraisingEventsResource.new(self)
+    end
+
     def users
       UsersResource.new(self)
     end
